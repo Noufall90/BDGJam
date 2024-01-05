@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class movement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public float moveSpeed;
     public float sprintMultiplier = 1.4f; // The multiplier for sprint speed (40% faster)
-    new public Rigidbody2D rigidbody; // Use the 'new' keyword to hide the inherited member
+    public Rigidbody2D rigidbody; // Use the 'new' keyword to hide the inherited member
     private Vector2 moveDirection;
     public Animator anim;
 
@@ -15,15 +15,17 @@ public class movement : MonoBehaviour
     private bool moving;
 
     public ParticleSystem dust;
+    private Transform dustFollowPoint; // Transform to follow the player
 
     // Start is called before the first frame update
     void Start()
     {
-        // Get the Rigidbody2D component from the GameObject if not assigned
         if (rigidbody == null)
         {
             rigidbody = GetComponent<Rigidbody2D>();
         }
+
+        dustFollowPoint = transform; // Set the dust follow point to the player's transform
     }
 
     // Update is called once per frame
@@ -45,12 +47,9 @@ public class movement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        // Allow sprinting when the player holds Shift
         if (Input.GetKey(KeyCode.LeftShift))
         {
             isSprinting = true;
-
-            // Call CreateDust() to create dust particles when Shift is pressed
             CreateDust();
         }
         else
@@ -63,13 +62,15 @@ public class movement : MonoBehaviour
     {
         float currentMoveSpeed = moveSpeed;
 
-        // Apply sprinting multiplier if sprinting is allowed
         if (isSprinting)
         {
             currentMoveSpeed *= sprintMultiplier;
         }
 
         rigidbody.velocity = moveDirection * currentMoveSpeed;
+
+        // Update the position of dust to follow the player
+        dust.transform.position = dustFollowPoint.position;
     }
 
     void CreateDust()
