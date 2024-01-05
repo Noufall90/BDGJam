@@ -82,21 +82,25 @@ public class Movement : MonoBehaviour
             currentCooldown -= Time.deltaTime;
         }
     }
-
     void Move()
     {
-        float currentMoveSpeed = moveSpeed;
+    float currentMoveSpeed = moveSpeed;
 
-        if (isSprinting)
-        {
-            currentMoveSpeed *= sprintMultiplier;
-        }
-
-        rigidbody.velocity = moveDirection * currentMoveSpeed;
-
-        // Update the position of dust to follow the player
-        dust.transform.position = dustFollowPoint.position;
+    if (isSprinting)
+    {
+        currentMoveSpeed *= sprintMultiplier;
     }
+
+    rigidbody.velocity = moveDirection * currentMoveSpeed;
+
+    // Update the position of dust to follow the player
+    var main = dust.main;
+    main.simulationSpeed = currentMoveSpeed / moveSpeed; // Adjust particle speed based on player's movement
+
+    // Place the dust particle system at the player's position
+    dust.transform.position = transform.position;
+    }
+
 
     void CreateDust()
     {
