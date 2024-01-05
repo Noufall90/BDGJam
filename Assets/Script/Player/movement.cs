@@ -10,14 +10,16 @@ public class Movement : MonoBehaviour
     public Rigidbody2D rigidbody; // Use the 'new' keyword to hide the inherited member
     private Vector2 moveDirection;
     public Animator anim;
-
     private bool isSprinting = false; // Keep track of sprinting state
     private bool moving;
-
     public ParticleSystem dust;
     private Transform dustFollowPoint; // Transform to follow the player
 
-    // Start is called before the first frame update
+    private float sprintTime = 10f; // Time duration for sprint in seconds
+    private float sprintCooldown = 5f; // Cooldown duration after sprint in seconds
+    private float currentSprintTime = 0f; // Timer for sprint duration
+    private float currentCooldown = 0f; // Timer for sprint cooldown
+
     void Start()
     {
         if (rigidbody == null)
@@ -33,6 +35,7 @@ public class Movement : MonoBehaviour
     {
         ProcessInput();
         Animate();
+        UpdateTimers();
     }
 
     void FixedUpdate()
@@ -47,14 +50,36 @@ public class Movement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && currentCooldown <= 0f)
         {
             isSprinting = true;
             CreateDust();
+
+            currentSprintTime += Time.deltaTime;
+            if (currentSprintTime >= sprintTime)
+            {
+                currentSprintTime = 0f;
+                isSprinting = false;
+                currentCooldown = sprintCooldown;
+            }
         }
         else
         {
             isSprinting = false;
+
+            if (currentCooldown > 0f)
+            {
+                currentCooldown -= Time.deltaTime;
+            }
+        }
+    }
+
+    void UpdateTimers()
+    {
+        // Reduce cooldown timer if it's active
+        if (currentCooldown > 0f)
+        {
+            currentCooldown -= Time.deltaTime;
         }
     }
 
