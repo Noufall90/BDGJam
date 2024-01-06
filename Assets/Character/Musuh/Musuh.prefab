@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5848346319653991631}
   - component: {fileID: 7316152942829287889}
   - component: {fileID: 1876631157634047421}
-  - component: {fileID: 8215381162118810879}
+  - component: {fileID: 3373081003636579350}
+  - component: {fileID: 7964735558224084426}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -132,7 +133,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!50 &8215381162118810879
+--- !u!114 &3373081003636579350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635276906935036199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069e1732c0ea37f4e853374771addd8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 0
+  distanceBetween: 0
+--- !u!50 &7964735558224084426
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -147,7 +163,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -158,7 +174,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &4116703043485565314
 GameObject:
   m_ObjectHideFlags: 0

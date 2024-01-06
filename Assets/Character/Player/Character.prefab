@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2123179946386797319}
   - component: {fileID: 109274611955213970}
   m_Layer: 0
-  m_Name: Player
+  m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b149007b6483c14ea3df2da4afeb75e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
   hearts:
   - {fileID: 0}
   - {fileID: 0}
