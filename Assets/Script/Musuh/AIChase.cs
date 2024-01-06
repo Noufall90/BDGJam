@@ -18,5 +18,11 @@ public class AIChase : MonoBehaviour
             Vector2 direction = ((Vector2)player.transform.position - (Vector2)transform.position).normalized;
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
+        else
+        {
+            transform.position = transform.position;
+            Atau jika ingin menghentikan pergerakan, gunakan speed = 0;
+            speed = 0;
+        }
     }
 }

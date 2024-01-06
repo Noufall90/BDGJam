@@ -625,7 +625,6 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -785,30 +784,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c166621a6b0fbd74abd4d97e8cebf95a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vignette: {fileID: 4800000, guid: 3285453affd98254d96d7933369140ef, type: 3}
-  vignetteColor:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  vignetteOffset: {x: 0, y: 0}
-  vignetteSize: {x: 1, y: 1}
-  intensity: 1
-  roundness: 1
-  smoothness: 1
-  vignetteMat: {fileID: 0}
 --- !u!1001 &922960258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6506,7 +6481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1461502265
 Transform:
   m_ObjectHideFlags: 0
