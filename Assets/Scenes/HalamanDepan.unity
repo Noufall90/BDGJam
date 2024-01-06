@@ -937,6 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992474966}
   - component: {fileID: 992474965}
+  - component: {fileID: 992474967}
   m_Layer: 0
   m_Name: Senter
   m_TagString: Untagged
@@ -956,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad1b46f2266a5947a71bf97288b9566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1366609613}
+  playerTransform: {fileID: 2056455615}
   lightHeightOffset: 0
 --- !u!4 &992474966
 Transform:
@@ -975,6 +976,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992474967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992474964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c40b07b4e72de4bb20976980064ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotlights:
+  - {fileID: 1461502264}
 --- !u!1 &1034437498
 GameObject:
   m_ObjectHideFlags: 0
@@ -6524,9 +6539,9 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 92.5
+  m_Intensity: 2.7
   m_LightVolumeIntensity: 0.12
-  m_LightVolumeEnabled: 0
+  m_LightVolumeEnabled: 1
   m_ApplyToSortingLayers: 0000000065fd2358799b34e7b1ec254f
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
