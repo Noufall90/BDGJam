@@ -1,28 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AIChase : MonoBehaviour
 {
     public GameObject player;
+    public GameObject[] spotlights; // Array untuk menyimpan semua objek Spotlight2D
+    public float chaseDistanceWithSpotlight;
+    public float chaseDistanceWithoutSpotlight;
     public float speed;
-    public float distanceThreshold;
-    private float distance;
 
     void Update()
     {
-        distance = Vector2.Distance(transform.position, player.transform.position);
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+        bool spotlightActive = IsAnySpotlightActive();
 
-        if (distance < distanceThreshold)
+        if (spotlightActive && distance < chaseDistanceWithSpotlight)
         {
-            Vector2 direction = ((Vector2)player.transform.position - (Vector2)transform.position).normalized;
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            ChasePlayer();
         }
-        else
+        else if (!spotlightActive && distance < chaseDistanceWithoutSpotlight)
         {
-            transform.position = transform.position;
-            Atau jika ingin menghentikan pergerakan, gunakan speed = 0;
-            speed = 0;
+            ChasePlayer();
         }
+    }
+
+    void ChasePlayer()
+    {
+        Vector2 direction = ((Vector2)player.transform.position - (Vector2)transform.position).normalized;
+        transform.Translate(direction * speed * Time.deltaTime);
+    }
+
+    bool IsAnySpotlightActive()
+    {
+        foreach (GameObject spotlight in spotlights)
+        {
+            if (spotlight.activeSelf)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

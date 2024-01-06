@@ -960,7 +960,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 992474964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c40b07b4e72de4bb20976980064ba2, type: 3}
+  m_Script: {fileID: 11500000, guid: daf6f304e54a11a4e968f0237048b3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spotlights:
@@ -6563,7 +6563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
       propertyPath: speed
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
       propertyPath: player
@@ -6579,6 +6579,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
       propertyPath: distanceThreshold
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
+      propertyPath: spotlights.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
+      propertyPath: 'spotlights.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1461502264}
+    - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
+      propertyPath: chaseDistanceWithSpotlight
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373081003636579350, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
+      propertyPath: chaseDistanceWithoutSpotlight
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4116703043485565314, guid: 92c8a03d73a67774e8eaa7952a62d594, type: 3}
