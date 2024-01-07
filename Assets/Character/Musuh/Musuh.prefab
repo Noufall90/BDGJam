@@ -146,8 +146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  spotlights: []
+  chaseDistanceWithSpotlight: 100
+  chaseDistanceWithoutSpotlight: 10
   speed: 5
-  distanceThreshold: 5
 --- !u!50 &7964735558224084426
 Rigidbody2D:
   serializedVersion: 4

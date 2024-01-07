@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Opening.unity
     guid: b29e28b65448039469b08030e8a1c114
   - enabled: 1
-    path: Assets/Scenes/HalamanDepan.unity
+    path: Assets/Scenes/Level1.unity
     guid: ba96896f43fba154ea0c48e97c9de841
   - enabled: 1
     path: Assets/Scenes/RuangTamu.unity
