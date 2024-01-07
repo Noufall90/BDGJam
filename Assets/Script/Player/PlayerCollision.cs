@@ -9,8 +9,6 @@ public class PlayerCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-    
-
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             HealthManager.health--;
@@ -31,9 +29,9 @@ public class PlayerCollision : MonoBehaviour
     // THIS METHOD FOR INVISIBILITY FOR FEW SECONDS 
     IEnumerator getDamage()
     {
-        Physics2D.IgnoreLayerCollision(6, 8);
+        Physics2D.IgnoreLayerCollision(6, 9);
         yield return new WaitForSeconds(3);
-        Physics2D.IgnoreLayerCollision(6, 8, false);
+        Physics2D.IgnoreLayerCollision(6, 9, false);
         Movement.isSprinting = true ;
         yield return new WaitForSeconds(1.2f);
         Movement.isSprinting = false;
