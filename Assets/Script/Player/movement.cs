@@ -14,7 +14,6 @@ public class Movement : MonoBehaviour
     private bool moving;
     public ParticleSystem dust;
     private Transform dustFollowPoint; // Transform to follow the player
-
     private float sprintTime = 10f; // Time duration for sprint in seconds
     private float sprintCooldown = 5f; // Cooldown duration after sprint in seconds
     private float currentSprintTime = 0f; // Timer for sprint duration
@@ -96,7 +95,6 @@ public class Movement : MonoBehaviour
 
     dust.transform.position = transform.position;
     }
-
 
     void CreateDust()
     {
