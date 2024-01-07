@@ -12,7 +12,7 @@ public class PlayerCollision : MonoBehaviour
 
             if (HealthManager.health <= 0)
             {
-                Invoke("RestartGame", 0.5f);
+                GameOverScreen.Instance.ShowGameOverScreen(true);
             }
             else
             {
