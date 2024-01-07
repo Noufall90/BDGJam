@@ -7,7 +7,7 @@ public class Level1TO2 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2"); // Ganti "RuangTamu" dengan nama scene yang ingin Anda tuju
+            SceneManager.LoadScene("Credits"); // Ganti "RuangTamu" dengan nama scene yang ingin Anda tuju
         }
     }
 }
