@@ -1,8 +1,30 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
+    private GameObject gameOverCanvas;
+    private bool isDead = false;
+    private void Awake()
+    {
+        // Find the canvas with the "GameOver" tag
+        gameOverCanvas = GameObject.FindWithTag("GameOver");
+
+        // Disable the game over canvas if found
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.SetActive(true);
+        }
+    }
+
+    private void Update()
+    {
+        if (isDead)
+        {
+            return;
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
@@ -12,7 +34,8 @@ public class PlayerCollision : MonoBehaviour
 
             if (HealthManager.health <= 0)
             {
-                Invoke("RestartGame", 0.5f);
+                isDead = true;
+                ShowGameOverCanvas();
             }
             else
             {
@@ -32,8 +55,35 @@ public class PlayerCollision : MonoBehaviour
     }
 
     // Metode untuk me-restart game
-    private void RestartGame()
+    public void RestartGame()
     {
-        Debug.Log("Game Restarted");
+        // Get the current scene index
+
+        isDead = false;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Reload the current scene to restart the game
+        SceneManager.LoadScene(currentSceneIndex);
     }
+    private void ShowGameOverCanvas()
+    {
+        // Enable the game over canvas if found
+        if (gameOverCanvas != null)
+        {
+            gameOverCanvas.SetActive(true);
+        }
+
+        // You can add any additional logic here when the player dies
+    }
+    public void Quit()
+    {
+#if UNITY_EDITOR
+        // If in the Unity Editor, stop playing the scene
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // If not in the Unity Editor, quit the application
+        Application.Quit();
+#endif
+    }
+
 }
