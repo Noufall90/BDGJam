@@ -14,7 +14,7 @@ public class PlayerCollision : MonoBehaviour
         // Disable the game over canvas if found
         if (gameOverCanvas != null)
         {
-            gameOverCanvas.SetActive(true);
+            gameOverCanvas.SetActive(false);
         }
     }
 
