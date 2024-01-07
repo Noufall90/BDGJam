@@ -1,0 +1,798 @@
+fileFormatVersion: 2
+guid: 7079a2a52c4af234ea0eef2c3d5690f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5054102973739830081
+    second: tutor1_0
+  - first:
+      213: 3978343559087373685
+    second: tutor1_1
+  - first:
+      213: 1917245719868962674
+    second: tutor1_2
+  - first:
+      213: 4910998303005301660
+    second: tutor1_3
+  - first:
+      213: 997647375755549051
+    second: tutor1_4
+  - first:
+      213: -9139245244362579100
+    second: tutor1_5
+  - first:
+      213: -4617869316608601918
+    second: tutor1_6
+  - first:
+      213: -4325805310299942106
+    second: tutor1_7
+  - first:
+      213: 2524938255201667913
+    second: tutor1_8
+  - first:
+      213: -8408859242844153776
+    second: tutor1_9
+  - first:
+      213: 6829456938680441083
+    second: tutor1_10
+  - first:
+      213: -3995951721509469592
+    second: tutor1_11
+  - first:
+      213: 3388496452572059370
+    second: tutor1_12
+  - first:
+      213: -6162578892726691746
+    second: tutor1_13
+  - first:
+      213: -3222328903704827611
+    second: tutor1_14
+  - first:
+      213: 8245701065671614483
+    second: tutor1_15
+  - first:
+      213: -5066374139176613012
+    second: tutor1_16
+  - first:
+      213: -7228261328416742400
+    second: tutor1_17
+  - first:
+      213: -4009968094517072343
+    second: tutor1_18
+  - first:
+      213: 1686838546781538828
+    second: tutor1_19
+  - first:
+      213: 4461830230103558582
+    second: tutor1_20
+  - first:
+      213: -5321072389311143948
+    second: tutor1_21
+  - first:
+      213: 4123573557905711199
+    second: tutor1_22
+  - first:
+      213: -2323224947258515596
+    second: tutor1_23
+  - first:
+      213: 7605720280707646111
+    second: tutor1_24
+  - first:
+      213: 7121004138945196413
+    second: tutor1_25
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tutor1_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 263
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b020870e7c32640800000000000000
+      internalID: 5054102973739830081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 285
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57dbdd9836ae53730800000000000000
+      internalID: 3978343559087373685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 263
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2777deff2dc6b9a10800000000000000
+      internalID: 1917245719868962674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 263
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b5d2fdfee572440800000000000000
+      internalID: 4910998303005301660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 263
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b799203a00b58dd00800000000000000
+      internalID: 997647375755549051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_5
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 263
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463279e3fd0ea2180800000000000000
+      internalID: -9139245244362579100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 206
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c05e54b2580aefb0800000000000000
+      internalID: -4617869316608601918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 228
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623d2184df6a7f3c0800000000000000
+      internalID: -4325805310299942106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_8
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 206
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b071527f16a0320800000000000000
+      internalID: 2524938255201667913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_9
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 206
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0589308121bbd4b80800000000000000
+      internalID: -8408859242844153776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_10
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 206
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8dfd6d6ea17ce50800000000000000
+      internalID: 6829456938680441083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_11
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 206
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86241dba4178b88c0800000000000000
+      internalID: -3995951721509469592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae69a32129b560f20800000000000000
+      internalID: 3388496452572059370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_13
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 171
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5894b6d52f1a7aa0800000000000000
+      internalID: -6162578892726691746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_14
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 149
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52923394fecf743d0800000000000000
+      internalID: -3222328903704827611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_15
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310aa6f7e6d9e6270800000000000000
+      internalID: 8245701065671614483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_16
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b072f209f90b9b0800000000000000
+      internalID: -5066374139176613012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_17
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004e6086e9e00bb90800000000000000
+      internalID: -7228261328416742400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_18
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 149
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ee8a5834bb958c0800000000000000
+      internalID: -4009968094517072343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 93
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a895698bad86710800000000000000
+      internalID: 1686838546781538828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_20
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 114
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b90c6954fa9bed30800000000000000
+      internalID: 4461830230103558582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 92
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff58faaad0c726b0800000000000000
+      internalID: -5321072389311143948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_22
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 93
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50e924ad40e93930800000000000000
+      internalID: 4123573557905711199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_23
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 93
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f945d283f32cfd0800000000000000
+      internalID: -2323224947258515596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_24
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 93
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9240986c42fc8960800000000000000
+      internalID: 7605720280707646111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutor1_25
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 93
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d713ae12983e2d260800000000000000
+      internalID: 7121004138945196413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tutor1_0: 5054102973739830081
+      tutor1_1: 3978343559087373685
+      tutor1_10: 6829456938680441083
+      tutor1_11: -3995951721509469592
+      tutor1_12: 3388496452572059370
+      tutor1_13: -6162578892726691746
+      tutor1_14: -3222328903704827611
+      tutor1_15: 8245701065671614483
+      tutor1_16: -5066374139176613012
+      tutor1_17: -7228261328416742400
+      tutor1_18: -4009968094517072343
+      tutor1_19: 1686838546781538828
+      tutor1_2: 1917245719868962674
+      tutor1_20: 4461830230103558582
+      tutor1_21: -5321072389311143948
+      tutor1_22: 4123573557905711199
+      tutor1_23: -2323224947258515596
+      tutor1_24: 7605720280707646111
+      tutor1_25: 7121004138945196413
+      tutor1_3: 4910998303005301660
+      tutor1_4: 997647375755549051
+      tutor1_5: -9139245244362579100
+      tutor1_6: -4617869316608601918
+      tutor1_7: -4325805310299942106
+      tutor1_8: 2524938255201667913
+      tutor1_9: -8408859242844153776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
