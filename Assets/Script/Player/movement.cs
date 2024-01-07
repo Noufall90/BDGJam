@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour
     private float sprintCooldown = 5f; // Cooldown duration after sprint in seconds
     private float currentSprintTime = 0f; // Timer for sprint duration
     private float currentCooldown = 0f; // Timer for sprint cooldown
+    private AudioSource audioSource; // Audio source component
+    public AudioClip footstepSound; // Footstep sound
 
     void Start()
     {
@@ -27,6 +29,16 @@ public class Movement : MonoBehaviour
         }
 
         dustFollowPoint = transform; // Set the dust follow point to the player's transform
+
+        // Adding AudioSource component if not already present
+        audioSource = gameObject.GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.clip = footstepSound;
+        audioSource.loop = true;
+        audioSource.playOnAwake = false;
     }
     
     void Update()
@@ -34,6 +46,7 @@ public class Movement : MonoBehaviour
         ProcessInput();
         Animate();
         UpdateTimers();
+        ManageFootstepAudio();
     }
 
     void FixedUpdate()
@@ -122,5 +135,17 @@ public class Movement : MonoBehaviour
         }
 
         anim.SetBool("Moving", moving);
+    }
+
+    void ManageFootstepAudio()
+    {
+        if (moving && !audioSource.isPlaying)
+        {
+            audioSource.Play(); // Play footstep sound if moving and audio is not already playing
+        }
+        else if (!moving && audioSource.isPlaying)
+        {
+            audioSource.Stop(); // Stop footstep sound if not moving and audio is playing
+        }
     }
 }
