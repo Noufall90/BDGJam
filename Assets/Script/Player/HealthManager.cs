@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
-    public static int health = 3;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    public static int health = 3;
+    public static int number;
+
+
     void Awake(){
-        
+        health = 3;
     }
-    // Update is called once per frame
+    // Update is called once er frame
     void Update()
     {
         foreach (Image img in hearts)
