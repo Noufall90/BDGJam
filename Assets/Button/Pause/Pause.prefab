@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8687097699010343306}
+      - m_Target: {fileID: 6717924711372053744}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Keluar
         m_Mode: 1
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 4395084013453858319}
   - component: {fileID: 6269031762902840355}
   - component: {fileID: 4506776198860253923}
-  - component: {fileID: 8687097699010343306}
+  - component: {fileID: 6717924711372053744}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8687097699010343306
+--- !u!114 &6717924711372053744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2364055162847143719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39081ae941ced1e4fa01a4f8ccd87180, type: 3}
+  m_Script: {fileID: 11500000, guid: 7103a7c7459db254c92eaebebb1b1fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2364055162847143719}
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8687097699010343306}
+      - m_Target: {fileID: 6717924711372053744}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Lanjut
         m_Mode: 1
