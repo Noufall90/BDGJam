@@ -96,7 +96,6 @@ public class Movement : MonoBehaviour
     dust.transform.position = transform.position;
     }
 
-
     void CreateDust()
     {
         dust.Play();
