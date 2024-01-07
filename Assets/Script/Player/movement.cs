@@ -6,11 +6,11 @@ using UnityEngine.Tilemaps;
 public class Movement : MonoBehaviour
 {
     public float moveSpeed;
-    public float sprintMultiplier = 1.4f; // The multiplier for sprint speed (40% faster)
+    public float sprintMultiplier = 1.9f; // The multiplier for sprint speed (40% faster)
     public Rigidbody2D rigidbody; // Use the 'new' keyword to hide the inherited member
     private Vector2 moveDirection;
     public Animator anim;
-    private bool isSprinting = false; // Keep track of sprinting state
+    public static bool isSprinting = false; // Keep track of sprinting state
     private bool moving;
     public ParticleSystem dust;
     private Transform dustFollowPoint; // Transform to follow the player
@@ -29,8 +29,7 @@ public class Movement : MonoBehaviour
 
         dustFollowPoint = transform; // Set the dust follow point to the player's transform
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         ProcessInput();
@@ -76,7 +75,6 @@ public class Movement : MonoBehaviour
 
     void UpdateTimers()
     {
-        // Reduce cooldown timer if it's active
         if (currentCooldown > 0f)
         {
             currentCooldown -= Time.deltaTime;
@@ -93,11 +91,9 @@ public class Movement : MonoBehaviour
 
     rigidbody.velocity = moveDirection * currentMoveSpeed;
 
-    // Update the position of dust to follow the player
     var main = dust.main;
     main.simulationSpeed = currentMoveSpeed / moveSpeed; // Adjust particle speed based on player's movement
 
-    // Place the dust particle system at the player's position
     dust.transform.position = transform.position;
     }
 

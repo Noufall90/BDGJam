@@ -7,6 +7,21 @@ public class Pause : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!pauseMenu.activeSelf)
+            {
+                PauseMenu();
+            }
+            else
+            {
+                Lanjut();
+            }
+        }
+    }
+
     public void PauseMenu()
     {
         pauseMenu.SetActive(true);
@@ -20,9 +35,8 @@ public class Pause : MonoBehaviour
     }
 
     public void Keluar()
-{
-    Time.timeScale = 1f;
-    SceneManager.LoadScene("LevelMenu"); // Menggunakan nama scene "room" untuk memuatnya
-}
-
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("LevelMenu");
+    }
 }

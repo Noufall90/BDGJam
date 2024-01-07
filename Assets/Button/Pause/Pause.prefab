@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1030756450812878045}
   - component: {fileID: 4094428309777088528}
   - component: {fileID: 2549400255340816515}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,8 +67,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -3119695713916645804, guid: 94ade70a385151f4ab25689cb64545ba, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4002771205902012391}
+      - m_Target: {fileID: 6717924711372053744}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Keluar
         m_Mode: 1
@@ -144,14 +144,14 @@ GameObject:
   - component: {fileID: 4395084013453858319}
   - component: {fileID: 6269031762902840355}
   - component: {fileID: 4506776198860253923}
-  - component: {fileID: 4002771205902012391}
-  m_Layer: 5
+  - component: {fileID: 6717924711372053744}
+  m_Layer: 8
   m_Name: Pause
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4395084013453858319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4002771205902012391
+--- !u!114 &6717924711372053744
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 8803153794821630162}
   - component: {fileID: 2808169236668868858}
   - component: {fileID: 9112893284736210957}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 2793941025599833060}
   - component: {fileID: 7179882721113348464}
   - component: {fileID: 5055619922802412362}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,8 +370,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1c9315b108d443a4d94a443445e818ad, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -391,7 +391,7 @@ GameObject:
   - component: {fileID: 7727979626546188060}
   - component: {fileID: 2260553688950533360}
   - component: {fileID: 8670069445448610560}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Image (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 7980460975382349654}
   - component: {fileID: 3592726480275795859}
   - component: {fileID: 3675325524411691734}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,8 +523,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 6790611485371028394, guid: 70d28b556d9de464a8d56a930f9a9e06, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4002771205902012391}
+      - m_Target: {fileID: 6717924711372053744}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Lanjut
         m_Mode: 1
