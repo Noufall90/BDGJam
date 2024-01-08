@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Dialog
+  - GameOver
   layers:
   - Default
   - TransparentFX

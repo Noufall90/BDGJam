@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -22,8 +20,6 @@ public class Exit : MonoBehaviour
 
     public void SaveGame()
     {
-        // Implementasi logika penyimpanan permainan di sini
-        // Contoh: menyimpan data ke PlayerPrefs
         PlayerPrefs.Save();
     }
 }

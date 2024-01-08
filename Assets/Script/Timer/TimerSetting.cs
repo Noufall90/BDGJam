@@ -7,6 +7,7 @@ public class TimerSetting : MonoBehaviour
     public float Waktu;
     public bool GameAktif = true;
     public GameObject CanvasKalah;
+    public GameObject gameObjekAktif; // Tambahkan GameObject yang ingin diaktifkan saat waktu habis
 
     void SetTimer()
     {
@@ -34,6 +35,12 @@ public class TimerSetting : MonoBehaviour
             Debug.Log("Game Kalah");
             CanvasKalah.SetActive(true);
             GameAktif = false;
+
+            // Mengaktifkan GameObject tertentu saat waktu habis
+            if (gameObjekAktif != null)
+            {
+                gameObjekAktif.SetActive(true);
+            }
         }
     }
 

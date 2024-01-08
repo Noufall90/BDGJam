@@ -7,6 +7,18 @@ public class AIChase : MonoBehaviour
     public float chaseDistanceWithSpotlight;
     public float chaseDistanceWithoutSpotlight;
     public float speed;
+    public AudioClip chaseSoundClip; // Audio yang ingin digunakan untuk looping
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        // Menginisialisasi AudioSource
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = chaseSoundClip;
+        audioSource.loop = true;
+        audioSource.playOnAwake = false; // Tidak memainkan audio saat permainan dimulai
+    }
 
     void Update()
     {
@@ -16,10 +28,16 @@ public class AIChase : MonoBehaviour
         if (spotlightActive && distance < chaseDistanceWithSpotlight)
         {
             ChasePlayer();
+            PlayChaseSound();
         }
         else if (!spotlightActive && distance < chaseDistanceWithoutSpotlight)
         {
             ChasePlayer();
+            PlayChaseSound();
+        }
+        else
+        {
+            StopChaseSound();
         }
     }
 
@@ -39,5 +57,21 @@ public class AIChase : MonoBehaviour
             }
         }
         return false;
+    }
+
+    void PlayChaseSound()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
+
+    void StopChaseSound()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
     }
 }
